@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing App</title>
+  <link rel="stylesheet" href="notebook.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Drawing App</h1>
+    <div class="controls">
+      <label for="shape-select">Shape:</label>
+      <select id="shape-select">
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="triangle">Triangle</option>
+      </select>
+
+      <label for="color-picker">Color:</label>
+      <input type="color" id="color-picker" value="#000000">
+
+      <label for="size-slider">Size:</label>
+      <input type="range" id="size-slider" min="10" max="200" value="50">
+
+      <button id="draw-button">Draw</button>
+      <button id="undo-button">Undo</button>
+      <button id="clear-button">Clear</button>
+    </div>
+    <canvas id="drawing-canvas" width="800" height="600"></canvas>
+    <div id="feedback"></div>
+  </div>
+  <script src="notebook.js"></script>
+</body>
+</html>
